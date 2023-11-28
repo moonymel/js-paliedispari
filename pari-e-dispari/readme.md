@@ -11,7 +11,7 @@ Chiedo all'utente un numero da 1 a 5 con prompt
 Creo una funzione per il numero random del pc
 Chiamo la funzione
 Creo una variabile per la somma del numero utente e numero pc
-Creo una funzione di check
+Creo una funzione di check pari o dispari
     ? somma%2 == 0
         return true
     ; return false
