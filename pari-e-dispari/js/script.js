@@ -30,7 +30,11 @@ function oddOrEven(sum) {
     return false
 }
 
+// CHIAMO LA FUNZIONE DI CHECK
+
 let check = oddOrEven(sum);
+
+// SETTO I RISULTATI DI RITORNO
 
 if(check == true) {
     console.log('la somma è pari')
