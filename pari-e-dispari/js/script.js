@@ -1,13 +1,13 @@
-// CHIEDO UN NUMERO DA 1 A 5
+// CHIEDO UN NUMERO DA 1 A 5 E CHIEDO TRA PARI E DISPARI
 
 let user_num = parseInt(prompt('Inserisci un numero da 1 a 5'));
+let choice = prompt('Scegli "pari" o "dispari"?');
 
 // CREO UNA FUNZIONE PER IL NUMERO RANDOM DEL PC
 
 function randomNumber() {
-    let pc_num = Math.floor(Math.random() * 5 + 1);
+    return Math.floor(Math.random() * 5 + 1);
 
-    return pc_num;
 }
 
 // CHIAMO LA FUNZIONE
@@ -24,10 +24,10 @@ let sum = user_num + pc_num;
 
 function oddOrEven(sum) {
     if(sum%2 == 0){
-        return true
+        return 'pari'
     }
 
-    return false
+    return 'dispari'
 }
 
 // CHIAMO LA FUNZIONE DI CHECK
@@ -36,10 +36,10 @@ let check = oddOrEven(sum);
 
 // SETTO I RISULTATI DI RITORNO
 
-if(check == true) {
-    console.log('la somma è pari')
+if(check == choice) {
+    console.log('Hai vinto!')
 }
 
 else {
-    console.log('la somma è dispari')
+    console.log('Hai perso!')
 }
